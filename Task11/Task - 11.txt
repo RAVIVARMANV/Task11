@@ -1,0 +1,62 @@
+Task - 11
+
+1. Public (public):
+
+	Class: A public class is accessible from any other class.
+
+	Method: A public method can be called from any other class.
+
+	Variable: A public variable can be accessed from any other class.
+
+Protected (protected):
+
+	Class: The protected access modifier cannot be applied to classes.
+
+	Method: A protected method is accessible within the same package and by subclasses in different 	packages (inheritance plays a role here).
+
+	Variable: A protected variable is accessible within the same package and by subclasses in different 	packages (inheritance plays a role here).
+
+Default (Package-Private or no modifier):
+
+	Class: If no access modifier is specified, it defaults to package-private. It means that the class 	is only accessible within the same package.
+
+	Method: A default (package-private) method is accessible within the same package.
+
+	Variable: A default (package-private) variable is accessible within the same package.
+
+Private (private):
+
+	Class: A private class cannot be accessed from outside the declaring class.
+
+	Method: A private method can only be called within the same class.
+
+	Variable: A private variable can only be accessed within the same class.
+
+2. Exception:
+	An exception is an abnormal event or runtime error that occurs during the execution of a program.
+	
+	Exceptions in Java are instances of the Exception class or its subclasses. They are generally caused by conditions that a program can catch and handle.
+
+	Exceptions can be checked (compile-time checked) or unchecked (runtime exceptions). Checked exceptions must be declared in the method signature or handled using a try-catch block, while 	unchecked exceptions do not require this.
+Error:
+	An error, on the other hand, is a more serious issue that typically occurs at runtime and is outside 	the control of the application.
+	
+	Errors in Java are instances of the Error class or its subclasses. They usually represent unrecoverable problems at the system level or severe issues that may lead to the termination of the 	program.
+	
+	Unlike exceptions, errors are not meant to be caught or handled by the application because attempting to do so might lead to unpredictable behavior.
+
+3.Checked Exceptions:
+
+	Checked exceptions are exceptions that are checked at compile time. 
+	This means that the compiler ensures that the code handling these exceptions is either declaring the exception using a throws clause or is enclosed in a try-catch block.
+	
+	Checked exceptions typically represent conditions that a program can anticipate and recover from. They are subclasses of Exception (excluding subclasses of RuntimeException and its 	subclasses).
+
+	Unchecked Exceptions (Runtime Exceptions):
+
+	Unchecked exceptions, also known as runtime exceptions, are not checked at compile time. The 	compiler does not enforce handling or declaring these exceptions.
+
+	Unchecked exceptions typically represent programming errors or conditions that might occur at 	runtime but are often the result of mistakes made by the programmer.
+
+ 	They are subclasses of RuntimeException or its subclasses.
+
